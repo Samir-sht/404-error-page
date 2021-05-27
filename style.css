@@ -30,27 +30,27 @@ h2.logo_text {
 }
 
 .container {
-  display: grid;
+  display: flex;
   height: 100vh;
   align-items: center;
-  /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin: 0 4.813rem;
-  column-gap: 2rem;
 }
 
 .scarecrow {
+  width: 48%;
   max-width: 100%;
+  object-fit: cover;
 }
 .scarecrow_img {
-  height: 27.964rem;
-  width: 33.701rem;
-  /* max-width: 100%; */
-  object-fit: cover !important;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  /* object-fit: cover; */
 }
 
 .content {
-  margin-left: 0rem;
+  width: 52%;
+  margin-left: 3rem;
 }
 .content_heading {
   font-family: var(--spacemono);
@@ -58,7 +58,7 @@ h2.logo_text {
   font-weight: var(--font_bold);
   line-height: 5rem;
   margin-bottom: 2.25rem;
-  width: 38rem;
+  max-width: 37rem;
   color: var(--clr_gray);
 }
 
@@ -67,7 +67,7 @@ h2.logo_text {
   font-weight: var(--font_regular);
   font-size: 1.5rem;
   line-height: 2.221rem;
-  width: 30rem;
+  max-width: 30rem;
   margin-bottom: 4rem;
   color: var(--clr_gray_light);
 }
@@ -98,70 +98,72 @@ h2.logo_text {
   color: var(--clr_gray);
 }
 
-footer {
+.footer_text {
+  position: absolute;
+  bottom: 1rem;
   width: 100%;
   text-align: center;
   font-family: var(--montserrat);
   font-size: 0.875rem;
   font-weight: var(--font_semi-bold);
   color: var(--clr_white_light);
-  margin-top: 0.5rem;
 }
 
 /*media queries*/
-@media (max-width: 80rem) {
+@media only screen and (max-width: 70rem) {
   .container {
+    display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
+    margin: 6.813rem 2.75rem 10rem 2.75rem;
     place-items: center;
+    max-width: 100%;
+    row-gap: 2rem;
   }
 
-  footer {
-    position: absolute;
-    bottom: 0;
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+  .content_heading {
+    max-width: 100%;
+  }
+  .content_desc {
+    max-width: 100%;
+  }
+  .footer_text {
+    position: relative;
   }
 }
 
-/*mobile version */
-@media (max-width: 31.25rem) {
+/* mobile version  */
+@media only screen and (max-width: 31.25rem) {
   h2.logo_text {
     top: 1.5rem;
     left: 1.25rem;
   }
-
   .container {
-    grid-template-columns: 1fr;
-    align-items: center;
-    margin: 0;
+    margin: 6.813rem 1.75rem 7.125rem 1.75rem;
+  }
+  .scarecrow {
+    width: 100%;
+    object-fit: cover;
   }
 
-  .scarecrow_img {
-    margin: 6.813rem 2.75rem 3.75rem 2.75rem;
+  .scarecrow _img {
     height: 14.875rem;
     width: 17.927rem;
   }
 
   .content {
-    margin: 0;
-    padding: 0 1.5rem;
+    width: 100%;
   }
-
   .content_heading {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     line-height: 4.443rem;
-    margin-bottom: 1.875rem;
-    width: 23rem;
   }
-
   .content_desc {
     font-size: 1.125rem;
-    line-height: 1.666rem;
-    width: 20rem;
-    margin-bottom: 4.125rem;
-  }
-
-  footer {
-    position: static;
-    margin-top: 2rem;
+    line-height: 1.667rem;
+    width: 100%;
   }
 }
