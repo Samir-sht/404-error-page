@@ -114,7 +114,7 @@ h2.logo_text {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 6.813rem 2.75rem 10rem 2.75rem;
+    margin: 6.813rem 2.75rem 12rem 2.75rem;
     place-items: center;
     max-width: 100%;
     row-gap: 2rem;
@@ -142,7 +142,7 @@ h2.logo_text {
     left: 1.25rem;
   }
   .container {
-    margin: 6.813rem 1.75rem 7.125rem 1.75rem;
+    margin: 6.813rem 1.75rem 8.5rem 1.75rem;
   }
   .scarecrow {
     width: 100%;
