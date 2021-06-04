@@ -119,6 +119,10 @@ header {
   .grid_6 {
     margin-top: 3rem;
   }
+
+  .grid_container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 61.25rem) {
@@ -138,7 +142,6 @@ header {
   }
 
   .grid_container {
-    grid-template-columns: 1fr 1fr;
     margin: 0 5rem;
   }
   .grid_2,
