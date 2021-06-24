@@ -106,7 +106,7 @@ header {
   font-size: 0.875rem;
   font-weight: var(--font_bold);
   color: var(--clr_white_light);
-  margin-top: 2rem;
+  margin-top: 2.25rem;
 }
 
 /* media queries */
@@ -160,8 +160,9 @@ header {
     font-size: 0.875rem;
   }
   .grid_container {
-    margin: 1rem;
-    column-gap: 1.25rem;
+    margin: 0 1rem;
+    column-gap: 2.25rem;
+    max-width: 20rem;
   }
 
   .grid_1 img {
