@@ -19,9 +19,28 @@
             <li><a href="#">Contact</a></li>
           </ul>
           <span class="menu"
-            ><img src="menu_black_24dp.svg" alt="menuicon"
-          /></span>
+            ><img
+              src="images/menu_black_24dp.svg"
+              id="openmenu"
+              alt="menuicon"
+              onclick="openmenu()"
+            />
+            <img
+              src="images/close_black_24dp.svg"
+              id="closemenu"
+              alt="closeicon"
+              onclick="closemenu()"
+            />
+          </span>
         </nav>
+        <div class="hamburgermenu" id="mobile-navbar">
+          <ul class="mobile-nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </header>
 
       <section class="hero">
@@ -34,16 +53,17 @@
           <button>
             Read More
 
-            <img src="arrow_right_alt_black_48dp.svg" alt="arrow" />
+            <img src="images/arrow_right_alt_black_48dp.svg" alt="arrow" />
           </button>
         </div>
 
         <div class="hero-right_side">
           <figure>
-            <img src="photo1.png" alt="image" />
+            <img src="images/photo1.png" alt="image" />
           </figure>
         </div>
       </section>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
