@@ -44,7 +44,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  max-width: 90%;
+  max-width: 60%;
 }
 
 .nav-links li a {
@@ -80,7 +80,7 @@ nav {
 }
 
 header h2 {
-  max-width: 10%;
+  max-width: 40%;
   color: var(--clr_white);
   font-size: 0.875rem;
   font-weight: var(--font_light);
@@ -101,7 +101,7 @@ header h2 {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   color: var(--clr_white);
-  column-gap: 5.438rem;
+ 
 }
 
 .hero-right_side img {
@@ -166,7 +166,8 @@ figure {
   
   }
   nav{
-    padding:1rem 1rem 2rem 0rem;
+    padding:0;
+    height:15vh;
   }
 
   .nav-links{
@@ -257,6 +258,8 @@ figure {
  
   .hero{
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+  
   }
   .hero-left_side h2 {
     font-size: 3rem;
@@ -272,7 +275,7 @@ figure {
   }
 
   .hero-left_side button {
-    margin-bottom: 1.125rem;
+    margin-bottom: 1rem;
     font-size: 1.125rem;
   }
   .hero-left_side button img{
@@ -286,11 +289,25 @@ figure {
 @media screen and (max-width:600px) {
   .container{
     margin:0 1rem;
-  
   }
 
   .hero-left_side h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   
+  .hero-left_side p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .hero-left_side button{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .hero-left_side button img{
+    margin-left: 0.938rem;
+    top: -0.5rem;
+  }
 }
