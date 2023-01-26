@@ -167,7 +167,8 @@ figure {
   }
   nav{
     padding:0;
-    height:15vh;
+  
+    height:10vh;
   }
 
   .nav-links{
@@ -259,7 +260,7 @@ figure {
   .hero{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2,1fr);
-    height:70vh;
+    height:80vh;
   
   }
   .hero-left_side h2 {
