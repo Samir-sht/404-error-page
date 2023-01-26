@@ -168,7 +168,7 @@ figure {
   nav{
     padding:0;
   
-    height:15vh;
+    height:12vh;
   }
 
   .nav-links{
@@ -271,7 +271,7 @@ figure {
   .hero-left_side p {
     font-size: 1.125rem;
     font-weight: 400;
-    max-width:80%;
+    max-width:100%;
   
     margin-bottom: 2rem;
   }
