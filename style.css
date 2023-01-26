@@ -259,6 +259,7 @@ figure {
   .hero{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2,1fr);
+    height:70vh;
   
   }
   .hero-left_side h2 {
