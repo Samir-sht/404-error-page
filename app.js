@@ -4,7 +4,9 @@ const closebtn = document.getElementById("closemenu");
 
 function openmenu() {
   closebtn.style.display = "block";
+
   openbtn.style.display = "none";
+
   togglemenu.style.display = "block";
 }
 

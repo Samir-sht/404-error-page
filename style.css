@@ -32,7 +32,7 @@ nav {
   align-items: center;
   height: 20vh;
   width: 100%;
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem 1rem 2rem 0;
 
   overflow: hidden;
 }
@@ -98,10 +98,16 @@ header h2 {
   height: 80vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   color: var(--clr_white);
- 
+  margin-bottom: 5rem;
+ position: relative;
+
+}
+
+.hero-right_side{
+  position: relative;
 }
 
 .hero-right_side img {
@@ -110,11 +116,57 @@ header h2 {
 }
 
 figure {
-  position: relative;
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover !important;
 }
+
+article{
+  position: absolute;
+  bottom: -70px;
+  right:50px;
+  height:160px;
+  width:350px;
+  padding:1.25rem 2rem;
+  background-color: #181719;
+  box-shadow:0px 4px 4px rgba(0,0,0,0.25);
+}
+
+
+article .card-info{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap:20px;
+  margin-bottom: 12px;
+  font-family: var(--montserrat);
+}
+
+article .card-info h3{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+article .card-info h4{
+  font-weight: lighter;
+  font-size: 0.875rem;
+
+}
+
+article .card-info img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+article .desc-text{
+  font-family: var(--lora);
+font-size: 1.25rem;
+font-weight: 600;
+max-width: 90%;
+}
+
+
 
 .hero-left_side h2 {
   font-size: 3rem;
@@ -160,7 +212,16 @@ figure {
   display: none;
 }
 
-@media screen and (max-width:900px) {
+.footer-text{
+  text-align: center;
+  color: #A9A9A9;
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  padding:2rem 0;
+  
+
+}
+@media screen and (max-width:991px) {
   .container{
     margin:0 2rem;
   
@@ -179,11 +240,12 @@ figure {
     display: none;
     position: fixed;
     top:0;
-    left:0;
+    right: 0;
     z-index: 100;
     background-color: #000;
     height: 100%;
     width: 100%;
+ 
     
   }
   .mobile-nav{
@@ -248,10 +310,11 @@ figure {
 
   .menu #closemenu{
     position: absolute;
-    right:0rem;
+    right:0px;
     top:-1rem;
     z-index: 200;
     display: none;
+    
   
   }
 
@@ -312,4 +375,26 @@ figure {
     margin-left: 0.938rem;
     top: -0.5rem;
   }
+  article{
+    right: 20px;
+    height: 155px;
+    width: 300px;
+    font-size: 1rem;
+
+  }
+
+  article .card-info {
+    gap: 15px;
+  }
+  article .card-info img{
+    height: 50px;
+    width:50px;
+
+  }
+  article .card-info h3, article .card-info h4{
+    font-size: 0.875rem;
+  }
+article .desc-text{
+  font-size: 1.125rem;
+}
 }
