@@ -397,4 +397,9 @@ max-width: 90%;
 article .desc-text{
   font-size: 1.125rem;
 }
+
+.footer-text{
+  font-size: 0.875rem;
+  padding:1rem 0 0 0;
+}
 }
