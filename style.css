@@ -144,12 +144,13 @@ article .card-info{
 
 article .card-info h3{
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 article .card-info h4{
   font-weight: lighter;
   font-size: 0.875rem;
+  color: #828282;
 
 }
 
@@ -391,8 +392,12 @@ max-width: 90%;
     width:50px;
 
   }
-  article .card-info h3, article .card-info h4{
-    font-size: 0.875rem;
+  article .card-info h3{
+    font-size: 0.875rem;;
+  }
+  
+  article .card-info h4{
+    font-size: 0.75rem;
   }
 article .desc-text{
   font-size: 1.125rem;
