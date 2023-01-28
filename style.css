@@ -151,6 +151,7 @@ article .card-info h4{
   font-weight: lighter;
   font-size: 0.875rem;
   color: #828282;
+  line-height: 25px;
 
 }
 
@@ -398,6 +399,8 @@ max-width: 90%;
   
   article .card-info h4{
     font-size: 0.75rem;
+    line-height: 20px;
+  
   }
 article .desc-text{
   font-size: 1.125rem;
