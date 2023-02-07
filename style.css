@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --playfair: "Playfair Display", serif;
+  --font_bold: 700;
+  --font_semibold: 600;
+  --font_medium: 500;
+  --font_normal: 400;
+  --font_light: 300;
+  --clr_black: #000;
+  --clr_lightgrey: #4f4f4f;
+  --clr_semigrey: #bdbdbd;
+  --clr_dark-grey: #333333;
+  --clr_orange: #f2994a;
+  --footer: #828282;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+header {
+  margin-bottom: 2rem;
+}
+
+header h2 {
+  font-family: var(--playfair);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header > article {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+article > img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+article em {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-family: var(--montserrat);
+  font-weight: var(--font_medium);
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  max-width: 60%;
+  color: var(--clr_lightgrey);
+}
+
+.cheese-img {
+  height: 100%;
+  width: 100%;
+}
+
+.cheese-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  column-gap: 6rem;
+}
+main > section > h3 {
+  font-family: var(--playfair);
+  font-size: 1.25rem;
+  font-weight: var(--font_bold);
+  margin-bottom: 1.25rem;
+}
+
+main > section > section > p {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-bottom: 1.125rem;
+}
+
+main input[type="checkbox"] {
+  height: 24px;
+  width: 24px;
+}
+
+main > section > section.recipe_items {
+  margin-bottom: 2rem;
+  color: var(--clr_dark-grey);
+}
+main > section > section.recipe_items > div {
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  color: var(--clr_dark-grey);
+}
+
+main > section > section.recipe_instruction {
+  margin-bottom: 1rem;
+  color: var(--clr_dark-grey);
+}
+main > section > section.recipe_instruction > article > div {
+  font-family: var(--playfair);
+  font-size: 1rem;
+  margin-bottom: 1.95rem;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 2.75rem;
+  align-items: flex-start;
+  list-style: none;
+}
+
+main > section > section.recipe_instruction > article > div > div.points {
+  font-size: 1.25rem;
+  text-align: center;
+  height: 36px;
+  width: 36px;
+  background-color: var(--clr_orange);
+  color: #fff;
+  border-radius: 8px;
+}
+
+main > section > section.recipe_instruction > article > div > span {
+  font-family: var(--montserrat);
+  font-weight: var(--font_medium);
+  line-height: 1.25rem;
+}
+
+main a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--clr_semigrey);
+  font-style: italic;
+}
+
+main > section.recipe_time {
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  height: 280px;
+  border-radius: 0.875rem;
+}
+main > section.recipe_time > div.prep_time {
+  padding: 0 1rem;
+}
+
+main > section.recipe_time > div.prep_time > div > div {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  align-items: center;
+
+  column-gap: 1.5rem;
+  font-family: var(--montserrat);
+}
+
+main > section.recipe_time figure {
+  padding: 0.25rem;
+}
+main > section.recipe_time h3 {
+  font-size: 0.875rem;
+  font-weight: var(--font_medium);
+}
+main > section.recipe_time > div > div > div h3.yellow {
+  color: var(--clr_orange);
+}
+
+main > section.recipe_time h4 {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  color: var(--clr_semigrey);
+  line-height: 1.125rem;
+  font-weight: var(--font_medium);
+}
+
+.footer-text {
+  font-family: var(--montserrat);
+  font-size: 0.875rem;
+  font-weight: var(--font_medium);
+  margin-top: 5rem;
+  text-align: center;
+  color: var(--clr_lightgrey);
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 900px) {
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header em {
+    max-width: 100%;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main > section.recipe_time {
+    order: 1;
+    height: auto;
+    padding: 1rem;
+  }
+
+  main > section.recipes {
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  main > section.recipe_time > .prep_time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+  }
+  main > section.recipe_time > .prep_time > div.yield {
+    grid-column: 1/1;
+  }
+  main > section.recipe_time > .prep_time > div.preptime {
+    grid-row: 2/2;
+  }
+  main > section.recipe_time > .prep_time > div.cooktime {
+    grid-row: 2/3;
+  }
+  main > section.recipe_time > .prep_time > div.totaltime {
+    grid-row: 2/4;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+
+  main > section > section.recipe_items > div {
+    gap: 1.5rem;
+  }
+
+  main > section.recipe_time > div.prep_time > div > div > figure img {
+    height: 24px;
+    width: 24px;
+  }
+  main > section.recipe_time > div.prep_time {
+    padding: 0;
+    grid-template-columns: minmax(0, 0.6fr);
+    grid-auto-flow: column;
+  }
+
+  main > section.recipe_time > div.prep_time > div > div {
+    column-gap: 0;
+  }
+
+  main > section.recipe_time h3 {
+    font-size: 0.75rem;
+  }
+  main > section.recipe_time h4 {
+    font-size: 0.675rem;
+  }
+}
