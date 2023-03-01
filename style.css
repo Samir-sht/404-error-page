@@ -245,32 +245,29 @@ main > section.recipe_time h4 {
   }
 
   header h2 {
-    padding-top: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+  header em {
+    font-size: 0.75rem;
   }
 
-  main > section > section.recipe_items > div {
-    gap: 1.5rem;
+  main > section.recipe_time {
+    padding: 0;
   }
 
-  main > section.recipe_time > div.prep_time > div > div > figure img {
-    height: 24px;
-    width: 24px;
-  }
   main > section.recipe_time > div.prep_time {
     padding: 0;
-    /* grid-template-columns: minmax(0, 0.6fr); */
-    grid-auto-flow: column;
+  }
+
+  main > section > section.recipe_instruction > article > div {
+    gap: 2rem;
   }
 
   main > section.recipe_time > div.prep_time > div > div {
     column-gap: 0;
   }
 
-  main > section.recipe_time h3 {
-    font-size: 0.75rem;
-  }
-  main > section.recipe_time h4 {
-    font-size: 0.675rem;
+  main > section > section.recipe_instruction > article > div > span {
+    font-size: 1rem;
   }
 }
