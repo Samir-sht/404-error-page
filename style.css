@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /*colors*/
+  --clr_white: #fff;
+  --clr_black: #000;
+  --clr_orange: #f2994a;
+  --clr_grey_700: #333;
+  --clr_grey_600: #4e5150;
+  --clr_grey_500: #4f4f4f;
+  --clr_grey_400: #828282;
+  --clr_grey_300: #f2f2f2;
+  --clr_grey_200: #e0e0e0;
+  --clr_grey_100: #bdbdbd;
+
+  /*font-weights*/
+  --light: 300;
+  --regular: 400;
+  --semi_bold: 600;
+  --bold: 700;
+
+  /*fonts*/
+  --font_mont: "Montserrat", sans-serif;
+
+  /*font-size*/
+  --thirty_six: 36px;
+  --twenty_four: 24px;
+  --eighteen: 18px;
+  --twelve: 12px;
+  --fourteen: 14px;
+  --sixteen: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font_mont);
+}
+
+body {
+  padding: 2rem 1.5rem;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.mb-3 {
+  margin-bottom: 2rem;
+}
+header {
+  margin-bottom: 1.5rem;
+}
+
+header .logo_title {
+  font-size: var(--twenty_four);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_500);
+}
+
+/*right side*/
+.cart {
+  padding: 1.5rem;
+  background-color: var(--clr_grey_300);
+  border-radius: var(--twelve);
+}
+
+.cart .cart-item .item-img {
+  height: 7.8125rem;
+  width: 50%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--twelve);
+}
+
+.items .item-title {
+  font-size: var(--twelve);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_600);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.items {
+  width: 50%;
+}
+
+.items .price {
+  margin-bottom: 1.125rem;
+}
+.items .price span {
+  font-size: var(--fourteen);
+  color: var(--clr_orange);
+  font-weight: var(--semi_bold);
+}
+
+.items .price del {
+  font-size: var(--fourteen);
+  font-weight: var(--semi_bold);
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem;
+  border: 1px solid var(--clr_grey_400);
+  gap: 0.5rem;
+}
+
+.br-12 {
+  border-radius: var(--twelve);
+}
+
+.counter .material-icons {
+  color: var(--clr_grey_400);
+  background-color: var(--clr_grey_200);
+  border-radius: 0.25rem;
+}
+
+.counter .count {
+  font-size: var(--sixteen);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_700);
+}
+
+.item-1 {
+  margin-bottom: 2rem;
+}
+
+.cart-item:last-child {
+  margin-bottom: 3rem;
+}
+
+.shipping,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shipping span,
+.total span {
+  font-size: var(--fourteen);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_700);
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.shipping {
+  border-top: 1px solid var(--clr_grey_100);
+  border-bottom: 1px solid var(--clr_grey_100);
+  border-left: none;
+  border-right: none;
+}
+
+/*end of right side*/
+
+/*left side*/
+
+/*contact information*/
+.contact-info {
+  margin-bottom: 2rem;
+}
+.contact-info .title {
+  font-size: var(--fourteen);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_700);
+  margin-bottom: 1rem;
+}
+
+.contact-info form label {
+  font-size: var(--twelve);
+  font-weight: var(--semi_bold);
+  text-transform: capitalize;
+  color: var(--clr_grey_500);
+}
+
+.contact-info form input {
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid var(--clr_grey_400);
+  margin-top: 0.5rem;
+  color: var(--clr_grey_400);
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+.mail {
+  font-size: var(--fourteen);
+}
+
+.call {
+  font-size: var(--fourteen);
+}
+
+.email .mail,
+.phone .call {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: var(--clr_grey_400);
+}
+
+input::placeholder {
+  font-size: var(--twelve);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_400);
+}
+
+.details {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/*end of contact*/
+
+/*shipping addresss*/
+.shipping-info {
+  margin-bottom: 1.5rem;
+}
+.shipping-info .title {
+  font-size: var(--fourteen);
+  font-weight: var(--semi_bold);
+  color: var(--clr_grey_700);
+  margin-bottom: 1rem;
+}
+
+.shipping-info form label {
+  font-size: var(--twelve);
+  font-weight: var(--semi_bold);
+  text-transform: capitalize;
+}
+
+.shipping-info form input {
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid var(--clr_grey_400);
+  margin-top: 0.5rem;
+  color: var(--clr_grey_400);
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+.shipping-info form select {
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid var(--clr_grey_400);
+  margin-top: 0.5rem;
+  color: var(--clr_grey_400);
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  font-weight: var(--semi_bold);
+  font-size: var(--twelve);
+  appearance: none;
+}
+
+.country::after {
+  position: absolute;
+  content: "\e5cf";
+  font-family: "Material Icons";
+  font-size: 18px;
+  color: #828282;
+  background-color: #e0e0e0;
+  right: 0.5rem;
+  top: 56%;
+  border-radius: 4px;
+}
+
+.country_postal {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.country,
+.postal {
+  width: 50%;
+}
+
+.fullname .account,
+.address .location,
+.city .city,
+.country .public,
+.postal .postal {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: var(--clr_grey_400);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.checkbox span {
+  font-size: var(--twelve);
+}
+
+.checkbox input[type="checkbox"] {
+  height: 21px;
+  width: 21px;
+  border-radius: 0.25rem;
+  margin-top: 0;
+}
+
+.btn-continue {
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+
+.btn-continue button {
+  padding: 1rem 3rem;
+  background-color: var(--clr_orange);
+  font-size: var(--sixteen);
+  font-weight: var(--semi_bold);
+  border: none;
+  outline: none;
+  color: var(--clr_white);
+  transition: background-color 0.5s ease;
+}
+
+.btn-continue button:hover {
+  cursor: pointer;
+  background-color: var(--clr_black);
+}
+
+/*end of left side*/
+
+footer h6 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: var(--twelve);
+  color: var(--clr_grey_100);
+}
+
+/*media-query*/
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .right-side {
+    order: 2;
+    height: 500px;
+    width: 380px;
+  }
+
+  footer h6 {
+    font-size: var(--fourteen);
+  }
+}
+
+@media (min-width: 991px) {
+  body {
+    max-width: 991px;
+    margin: 0 auto;
+  }
+
+  .container {
+    gap: 3rem;
+  }
+
+  .items .item-title {
+    font-size: var(--sixteen);
+  }
+
+  .items .price del,
+  .items .price span {
+    font-size: var(--sixteen);
+  }
+
+  header .logo_title {
+    font-size: var(--thirty_six);
+  }
+
+  .contact-info .title,
+  .shipping-info .title {
+    font-size: var(--eighteen);
+  }
+
+  input::placeholder {
+    font-size: var(--sixteen);
+  }
+
+  .contact-info form label,
+  .shipping-info form label {
+    font-size: var(--sixteen);
+  }
+
+  .contact-info form input,
+  .shipping-info form input {
+    height: 3.4375rem;
+  }
+
+  .shipping-info form select {
+    height: 3.4375rem;
+    font-size: var(--sixteen);
+  }
+}

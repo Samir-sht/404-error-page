@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo_title">Checkout</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class=" right-side cart mb-3">
+        <div class="items-list">
+          <div class="cart-item item-1 flex-align">
+            <div class="item-img">
+              <img src="./photo1.png" class="img" alt="image">
+            </div>
+
+            <div class="items">
+              <h2 class="item-title">Vintage Backbag</h2>
+              <div class="price flex-align">
+                <span class="discounted-price">$54.99</span>
+                <del class="actual-price">$94.99</del>
+              </div>
+              <div class="counter br-12">
+                <span class="material-icons md-18">
+                  remove
+                </span>
+                <p class="count">1</p>
+                <span class="material-icons md-18">
+                  add
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cart-item item-2 flex-align">
+            <div class="item-img">
+              <img src="./photo2.png" class="img" alt="image">
+            </div>
+
+            <div class="items">
+              <h2 class="item-title">levi shoes</h2>
+              <div class="price flex-align">
+                <span class="discounted-price">$74.99</span>
+                <del class="actual-price">$24.99</del>
+              </div>
+              <div class="counter br-12">
+                <span class="material-icons md-18">
+                  remove
+                </span>
+                <p class="count">1</p>
+                <span class="material-icons md-18">
+                  add
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="shipping">
+          <span>Shipping</span>
+          <span>$19</span>
+        </div>
+        <div class="total">
+          <span>Total</span>
+          <span>$148.98</span>
+        </div>
+      </div>
+
+
+      <div class="left-side contact">
+        <div class="contact-info">
+          <h2 class="title">Contact Information</h2>
+
+          <form>
+            <div class="details email">
+              <label>email</label>
+              <span class="material-icons mail ">mail</span>
+
+              <input class="br-12" type="email" placeholder="Enter your email...">
+            </div>
+
+            <div class=" details phone">
+              <label>Phone</label>
+              <span class="material-icons call ">call</span>
+
+              <input class="br-12" type="number" placeholder="Enter your phone...">
+            </div>
+          </form>
+        </div>
+
+        <div class="shipping-info">
+          <h2 class="title">Shipping address</h2>
+
+          <form>
+            <div class="details fullname">
+              <label>Fullname</label>
+              <span class="material-icons account ">account_circle</span>
+
+              <input class="br-12" type="text" placeholder="Rodney Cotton">
+            </div>
+
+            <div class=" details address">
+              <label>Address</label>
+              <span class="material-icons location ">home</span>
+
+              <input class="br-12" type="text" placeholder="Your Address..">
+            </div>
+
+            <div class=" details city">
+              <label>City</label>
+              <span class="material-icons city">apartment</span>
+
+              <input class="br-12" type="text" placeholder="Your city..">
+            </div>
+
+            <div class="country_postal">
+              <div class=" details country">
+                <label>Country</label>
+
+                <span class="material-icons public">public</span>
+
+                <select name="country" class="br-12 input-country">
+                  <option value="1" selected disabled="true">Your Country..</option>
+                  <option value="2">USA</option>
+                  <option value="3">Japan</option>
+                </select>
+
+
+              </div>
+
+              <div class=" details postal">
+                <label>Postal code</label>
+                <span class="material-icons postal">markunread_mailbox</span>
+
+                <input class="br-12" type="number" placeholder="Your postal code..">
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox">
+              <label>Save this information for next time</label>
+            </div>
+
+            <div class="btn-continue "> <button class="br-12">Continue</button></div>
+
+          </form>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <h6>created by Samir Shrestha - devChallenges.io</h6>
+  </footer>
+
+</body>
+
+</html>
