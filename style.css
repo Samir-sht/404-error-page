@@ -194,6 +194,7 @@ header .logo_title {
   margin-top: 0.5rem;
   color: var(--clr_grey_400);
   padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  font-weight:var(--semi_bold);
 }
 
 .mail {
