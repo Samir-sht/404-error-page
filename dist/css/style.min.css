@@ -148,7 +148,7 @@ main .email__field {
 }
 main .email__field input[type=email] {
   height: 2.8125rem;
-  width: 18.125rem;
+  width: 100%;
   border-radius: 0.75rem;
   background-color: #f2f2f2;
   outline: none;
@@ -169,5 +169,5 @@ main .email__field button {
   border: none;
   outline: none;
   position: absolute;
-  right: 3.125rem;
+  right: 0rem;
 }
