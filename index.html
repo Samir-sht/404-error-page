@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Edie's Homepage </title>
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <nav class="nav nav-bar">
+        <div class="logo">
+          <h3>Edie</h3>
+        </div>
+        <ul class="nav__links">
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">our works</a></li>
+          <li><a href="#">clients</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
+
+      </nav>
+      <span class="material-icons md-18 menu">menu</span>
+
+    </header>
+
+    <main>
+      <div class="banner mb-24">
+        <div class="banner__heading top-part">
+          <p class="banner_subtitle">Unhappy with your website?</p>
+          <h2 class="banner_title">We create beautiful and fast web services</h2>
+        </div>
+        <figure class="mb-24">
+          <img src="./images/heroImage.jpg" alt="hero">
+        </figure>
+
+        <div class="bottom-part mb-24">
+          <h2>Story, emotion and purpose</h2>
+          <p>We help transform your ideas into real world applications that will outperform your toughest competition
+            and help you achieve your strategic goals in short period of time.</p>
+
+        </div>
+
+        <div class="email">
+          <h5>Want us to contact you?</h5>
+          <div class="email__field">
+            <input type="email" placeholder="Email">
+            <button>Join</button>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    //hamburger menu
+    const menu_icon = document.querySelector('.menu');
+    const menu_items = document.querySelector('.nav__links');
+
+    menu_icon.addEventListener("click", () => {
+      menu_items.classList.toggle("show");
+
+
+    })
+
+    document.addEventListener("click", (e) => {
+      if (!menu_icon.contains(e.target) && e.target !== menu_icon) {
+        menu_items.classList.remove("show");
+      }
+    })
+  </script>
+
+</body>
+
+</html>

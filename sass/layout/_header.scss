@@ -1,0 +1,58 @@
+.container {
+  padding: 1rem;
+  header {
+    @include position(relative, 0, 0);
+
+    span {
+      position: absolute;
+      top: 8px;
+      right: 0;
+    }
+    .nav {
+      @include flex-box(flex-start, flex-start);
+      width: 100%;
+      flex-direction: column;
+
+      .logo {
+        @include typography(1.5rem, 800);
+        color: $grey_800;
+      }
+      &__links {
+        @include ul(8px, 0, none);
+        width: 100%;
+        @include position(fixed, 6%, 0);
+        text-align: center;
+
+        visibility: hidden;
+        z-index: 10;
+        transition: all 0.5s ease;
+        transform: translatex(-100%);
+        overflow: hidden;
+        transform-origin: left;
+        li {
+          padding: 5px 0;
+          a {
+            color: $black;
+            text-transform: capitalize;
+            @include typography(1rem, 400);
+          }
+        }
+      }
+
+      &__links.show {
+        height: 35vh;
+        visibility: visible;
+        transform: translateY(0);
+        margin-top: 1rem;
+        background-color: $blue;
+        li {
+          line-height: 40px;
+        }
+        a {
+          color: $white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
