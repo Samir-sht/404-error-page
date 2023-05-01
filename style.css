@@ -40,7 +40,7 @@
 }
 
 body {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .flex-align {
@@ -263,6 +263,7 @@ input::placeholder {
   font-weight: var(--semi_bold);
   font-size: var(--twelve);
   appearance: none;
+  background-color:var(--clr_white);
 }
 
 .country::after {
