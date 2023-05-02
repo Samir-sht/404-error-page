@@ -166,7 +166,7 @@ main {
   padding: 2rem 0rem;
 }
 main .banner__heading {
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 main .banner_subtitle {
   font-size: 0.75rem;
@@ -188,7 +188,7 @@ main .banner figure img {
   border-radius: 1.125rem;
 }
 main .bottom-part {
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 main .bottom-part h2 {
   font-size: 1.5rem;
@@ -203,7 +203,7 @@ main .bottom-part p {
   color: #4f4f4f;
 }
 main .email {
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 main .email h5 {
   font-size: 0.75rem;
@@ -240,7 +240,7 @@ main .email__field button {
   right: 0rem;
 }
 main .cards {
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 main .cards__title {
   font-size: 1.5rem;
@@ -254,9 +254,8 @@ main .project__title {
   font-weight: 500;
   line-height: normal;
   width: 100%;
-  padding-right: 2rem;
   color: #333333;
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 main .project_cards figure img {
   height: 20.9375rem;
@@ -290,4 +289,24 @@ main .project .link a {
 }
 main .project .link a .forward-arrow {
   font-size: 1.5rem;
+}
+main .team__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  color: #eb5757;
+}
+main .team__description {
+  padding-right: 2rem;
+}
+main .team__description p {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #333333;
+}
+main .team__description span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4f4f4f;
 }

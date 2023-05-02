@@ -4,7 +4,7 @@ main {
 
   .banner {
     &__heading {
-      padding-left: 1.5rem;
+      padding: 0 1.5rem;
     }
     &_subtitle {
       @include typography(0.75rem, 500);
@@ -26,7 +26,7 @@ main {
   }
 
   .bottom-part {
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
     h2 {
       @include typography(1.5rem, 500);
       max-width: 60%;
@@ -40,7 +40,7 @@ main {
   }
 
   .email {
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
     h5 {
       @include typography(0.75rem, 500);
       color: $grey_600;
@@ -76,7 +76,7 @@ main {
   }
 
   .cards {
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
     &__title {
       @include typography(1.5rem, 500);
       line-height: normal;
@@ -90,9 +90,9 @@ main {
       @include typography(1.5rem, 500);
       line-height: normal;
       width: 100%;
-      padding-right: 2rem;
+
       color: $grey_800;
-      padding-left: 1.5rem;
+      padding: 0 1.5rem;
     }
 
     &_cards {
@@ -123,6 +123,28 @@ main {
         .forward-arrow {
           font-size: 1.5rem;
         }
+      }
+    }
+  }
+
+  .team {
+    &__title {
+      @include typography(1.5rem, 500);
+      line-height: normal;
+      width: 100%;
+      color: $red;
+    }
+
+    &__description {
+      padding-right: 2rem;
+      p {
+        @include typography(2.25rem, 500);
+        color: $grey_800;
+      }
+
+      span {
+        @include typography(1rem, 400);
+        color: $grey_700;
       }
     }
   }
