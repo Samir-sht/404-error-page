@@ -29,7 +29,7 @@ main {
     padding: 0 1.5rem;
     h2 {
       @include typography(1.5rem, 500);
-      max-width: 60%;
+      max-width: 70%;
       color: $grey_800;
       margin-bottom: 1.125rem;
     }
