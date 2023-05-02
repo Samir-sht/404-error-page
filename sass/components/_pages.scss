@@ -80,7 +80,7 @@ main {
     &__title {
       @include typography(1.5rem, 500);
       line-height: normal;
-      padding-right: 5rem;
+      padding-right: 4rem;
       color: $grey_800;
     }
   }
@@ -136,7 +136,7 @@ main {
     }
 
     &__description {
-      padding-right: 2rem;
+      padding-right: 2.5rem;
       p {
         @include typography(2.25rem, 500);
         color: $grey_800;
