@@ -3,6 +3,9 @@ main {
   // padding-left: 1.5rem;
 
   .banner {
+    &__heading {
+      padding-left: 1.5rem;
+    }
     &_subtitle {
       @include typography(0.75rem, 500);
       color: $blue;
@@ -23,6 +26,7 @@ main {
   }
 
   .bottom-part {
+    padding-left: 1.5rem;
     h2 {
       @include typography(1.5rem, 500);
       max-width: 60%;
@@ -32,11 +36,11 @@ main {
     p {
       @include typography(0.875rem, 400);
       color: $grey_700;
-      max-width: 80%;
     }
   }
 
   .email {
+    padding-left: 1.5rem;
     h5 {
       @include typography(0.75rem, 500);
       color: $grey_600;
@@ -72,6 +76,7 @@ main {
   }
 
   .cards {
+    padding-left: 1.5rem;
     &__title {
       @include typography(1.5rem, 500);
       line-height: normal;
@@ -87,6 +92,7 @@ main {
       width: 100%;
       padding-right: 2rem;
       color: $grey_800;
+      padding-left: 1.5rem;
     }
 
     &_cards {

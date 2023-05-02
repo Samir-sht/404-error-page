@@ -165,6 +165,9 @@ a {
 main {
   padding: 2rem 0rem;
 }
+main .banner__heading {
+  padding-left: 1.5rem;
+}
 main .banner_subtitle {
   font-size: 0.75rem;
   font-weight: 500;
@@ -184,6 +187,9 @@ main .banner figure img {
      object-fit: cover;
   border-radius: 1.125rem;
 }
+main .bottom-part {
+  padding-left: 1.5rem;
+}
 main .bottom-part h2 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -195,7 +201,9 @@ main .bottom-part p {
   font-size: 0.875rem;
   font-weight: 400;
   color: #4f4f4f;
-  max-width: 80%;
+}
+main .email {
+  padding-left: 1.5rem;
 }
 main .email h5 {
   font-size: 0.75rem;
@@ -231,6 +239,9 @@ main .email__field button {
   position: absolute;
   right: 0rem;
 }
+main .cards {
+  padding-left: 1.5rem;
+}
 main .cards__title {
   font-size: 1.5rem;
   font-weight: 500;
@@ -245,6 +256,7 @@ main .project__title {
   width: 100%;
   padding-right: 2rem;
   color: #333333;
+  padding-left: 1.5rem;
 }
 main .project_cards figure img {
   height: 20.9375rem;
