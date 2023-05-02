@@ -1,16 +1,15 @@
 main {
   padding: 2rem 0;
+  padding-left: 1.5rem;
 
   .banner {
-    padding-left: 1.5rem;
-
     &_subtitle {
       @include typography(0.75rem, 500);
       color: $blue;
     }
     &_title {
       @include typography(1.5rem, 500);
-      line-height: 2.25rem;
+      line-height: normal;
       padding-right: 3rem;
     }
   }
@@ -25,22 +24,22 @@ main {
   .bottom-part {
     h2 {
       @include typography(1.5rem, 500);
-      width: 55%;
+      max-width: 60%;
       color: $grey_800;
       margin-bottom: 1.125rem;
     }
     p {
-      @include typography(12px, 400);
+      @include typography(0.875rem, 400);
       color: $grey_700;
-      width: 80%;
+      max-width: 80%;
     }
   }
 
   .email {
     h5 {
-      @include typography(0.625rem, 500);
+      @include typography(0.75rem, 500);
       color: $grey_600;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.625rem;
     }
 
     &__field {
@@ -68,6 +67,15 @@ main {
         position: absolute;
         right: 0rem;
       }
+    }
+  }
+
+  .cards {
+    &__title {
+      @include typography(1.5rem, 500);
+      line-height: normal;
+      padding-right: 5rem;
+      color: $grey_800;
     }
   }
 }

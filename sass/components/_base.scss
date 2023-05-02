@@ -18,3 +18,51 @@ a {
 .mb-24 {
   margin-bottom: 1.5rem;
 }
+
+.mb-48 {
+  margin-bottom: 3rem;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-16 {
+  margin-bottom: 1rem;
+}
+
+.card {
+  figure {
+    background-color: $blue;
+    @include height_width(67px, 67px);
+    border-radius: 1rem;
+    @include flex-box(center, center);
+
+    .material-icons {
+      font-size: 2.25rem;
+      color: $white;
+    }
+  }
+  &__body {
+    h3 {
+      @include typography(1.5rem, 700);
+      color: $grey_800;
+    }
+    p {
+      @include typography(1rem, 400);
+      color: $grey_700;
+      max-width: 80%;
+    }
+    button {
+      @include height_width(2.625rem, 7.25rem);
+      border: none;
+      outline: none;
+      border-radius: 12px;
+      background-color: $grey_300;
+
+      a {
+        @include typography(1rem, 500);
+      }
+    }
+  }
+}

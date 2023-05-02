@@ -1,3 +1,4 @@
+/*colors*/
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +22,61 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/*colors*/
+.mb-48 {
+  margin-bottom: 3rem;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-16 {
+  margin-bottom: 1rem;
+}
+
+.card figure {
+  background-color: #2d9cdb;
+  height: 67px;
+  width: 67px;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card figure .material-icons {
+  font-size: 2.25rem;
+  color: #fff;
+}
+.card__body h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+.card__body p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  max-width: 80%;
+}
+.card__body button {
+  height: 2.625rem;
+  width: 7.25rem;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+}
+.card__body button a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .container {
   padding: 1rem;
 }
@@ -50,6 +105,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 .container header .nav .logo {
   font-size: 1.5rem;
@@ -57,53 +113,42 @@ a {
   color: #333333;
 }
 .container header .nav__links {
-  padding: 8px;
+  padding: 0;
   margin: 0;
   list-style: none;
   width: 100%;
-  position: fixed;
-  top: 6%;
+  position: relative;
+  top: 0;
   left: 0;
   text-align: center;
-  visibility: hidden;
-  z-index: 10;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translatex(-100%);
-          transform: translatex(-100%);
+  height: 0px;
+  z-index: 20;
+  background-color: #2d9cdb;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
   overflow: hidden;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  margin-top: 1rem;
 }
 .container header .nav__links li {
   padding: 5px 0;
+  line-height: 40px;
 }
 .container header .nav__links li a {
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 400;
 }
-.container header .nav__links.show {
-  height: 35vh;
-  visibility: visible;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  margin-top: 1rem;
-  background-color: #2d9cdb;
+.container header .nav .show {
+  height: 27vh;
+  padding: 8px;
 }
-.container header .nav__links.show li {
-  line-height: 40px;
-}
-.container header .nav__links.show a {
-  color: #fff;
-  font-size: 1rem;
+.container header .nav .show li {
+  line-height: 1.875rem;
 }
 
 main {
   padding: 2rem 0;
-}
-main .banner {
   padding-left: 1.5rem;
 }
 main .banner_subtitle {
@@ -114,7 +159,7 @@ main .banner_subtitle {
 main .banner_title {
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 2.25rem;
+  line-height: normal;
   padding-right: 3rem;
 }
 main figure img {
@@ -127,21 +172,21 @@ main figure img {
 main .bottom-part h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  width: 55%;
+  max-width: 60%;
   color: #333333;
   margin-bottom: 1.125rem;
 }
 main .bottom-part p {
-  font-size: 12px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #4f4f4f;
-  width: 80%;
+  max-width: 80%;
 }
 main .email h5 {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: #828282;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
 }
 main .email__field {
   position: relative;
@@ -170,4 +215,11 @@ main .email__field button {
   outline: none;
   position: absolute;
   right: 0rem;
+}
+main .cards__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 5rem;
+  color: #333333;
 }
