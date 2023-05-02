@@ -1,6 +1,6 @@
 main {
-  padding: 2rem 0;
-  padding-left: 1.5rem;
+  padding: 2rem 0rem;
+  // padding-left: 1.5rem;
 
   .banner {
     &_subtitle {
@@ -10,14 +10,15 @@ main {
     &_title {
       @include typography(1.5rem, 500);
       line-height: normal;
-      padding-right: 3rem;
+      padding-right: 1rem;
+      color: $grey_800;
     }
-  }
 
-  figure {
-    img {
-      @include img(145px, 100%, cover);
-      border-radius: 1.125rem;
+    figure {
+      img {
+        @include img(145px, 100%, cover);
+        border-radius: 1.125rem;
+      }
     }
   }
 
@@ -76,6 +77,47 @@ main {
       line-height: normal;
       padding-right: 5rem;
       color: $grey_800;
+    }
+  }
+
+  .project {
+    &__title {
+      @include typography(1.5rem, 500);
+      line-height: normal;
+      width: 100%;
+      padding-right: 2rem;
+      color: $grey_800;
+    }
+
+    &_cards {
+      figure {
+        img {
+          @include img(20.9375rem, 100%, cover);
+          border-radius: 1.125rem;
+        }
+      }
+    }
+
+    &__body {
+      span {
+        @include typography(0.875rem, 400);
+      }
+      p {
+        @include typography(1.125rem, 500);
+      }
+    }
+
+    .link {
+      a {
+        @include flex-box(flex-start, center);
+        gap: 0.5rem;
+        @include typography(1.125rem, 500);
+        color: $blue;
+
+        .forward-arrow {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

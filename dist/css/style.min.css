@@ -35,7 +35,6 @@ a {
 }
 
 .card figure {
-  background-color: #2d9cdb;
   height: 67px;
   width: 67px;
   border-radius: 1rem;
@@ -52,6 +51,15 @@ a {
 .card figure .material-icons {
   font-size: 2.25rem;
   color: #fff;
+}
+.card figure.edit {
+  background-color: #2d9cdb;
+}
+.card figure.code {
+  background-color: #27ae60;
+}
+.card figure.storage {
+  background-color: #eb5757;
 }
 .card__body h3 {
   font-size: 1.5rem;
@@ -75,6 +83,13 @@ a {
 .card__body button a {
   font-size: 1rem;
   font-weight: 500;
+  color: #828282;
+}
+.card__body button.frontend-btn {
+  background-color: #2d9cdb;
+}
+.card__body button.frontend-btn a {
+  color: #fff;
 }
 
 .container {
@@ -140,7 +155,7 @@ a {
   font-weight: 400;
 }
 .container header .nav .show {
-  height: 27vh;
+  height: 30vh;
   padding: 8px;
 }
 .container header .nav .show li {
@@ -148,8 +163,7 @@ a {
 }
 
 main {
-  padding: 2rem 0;
-  padding-left: 1.5rem;
+  padding: 2rem 0rem;
 }
 main .banner_subtitle {
   font-size: 0.75rem;
@@ -160,9 +174,10 @@ main .banner_title {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: normal;
-  padding-right: 3rem;
+  padding-right: 1rem;
+  color: #333333;
 }
-main figure img {
+main .banner figure img {
   height: 145px;
   width: 100%;
   -o-object-fit: cover;
@@ -222,4 +237,45 @@ main .cards__title {
   line-height: normal;
   padding-right: 5rem;
   color: #333333;
+}
+main .project__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  padding-right: 2rem;
+  color: #333333;
+}
+main .project_cards figure img {
+  height: 20.9375rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.125rem;
+}
+main .project__body span {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+main .project__body p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+main .project .link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2d9cdb;
+}
+main .project .link a .forward-arrow {
+  font-size: 1.5rem;
 }

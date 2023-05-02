@@ -33,7 +33,6 @@ a {
 
 .card {
   figure {
-    background-color: $blue;
     @include height_width(67px, 67px);
     border-radius: 1rem;
     @include flex-box(center, center);
@@ -41,6 +40,18 @@ a {
     .material-icons {
       font-size: 2.25rem;
       color: $white;
+    }
+
+    &.edit {
+      background-color: $blue;
+    }
+
+    &.code {
+      background-color: $green;
+    }
+
+    &.storage {
+      background-color: $red;
     }
   }
   &__body {
@@ -62,6 +73,15 @@ a {
 
       a {
         @include typography(1rem, 500);
+        color: $grey_600;
+      }
+
+      &.frontend-btn {
+        background-color: $blue;
+
+        a {
+          color: $white;
+        }
       }
     }
   }
