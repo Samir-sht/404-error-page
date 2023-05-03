@@ -29,11 +29,11 @@
         background-color: $blue;
         transition: height 0.5s ease-in-out;
         overflow: hidden;
-        margin-top: 1rem;
+        // margin-top: 1rem;
 
         li {
-          padding: 5px 0;
-          line-height: 40px;
+          padding: 8px 0;
+          line-height: normal;
           a {
             color: $white;
             text-transform: capitalize;
@@ -43,12 +43,12 @@
       }
 
       .show {
-        height: 35vh;
-        padding: 8px;
+        height: 65vh;
+        // padding: 8px;
 
-        li {
-          line-height: 1.875rem;
-        }
+        // li {
+        //   line-height: 1.875rem;
+        // }
       }
     }
   }

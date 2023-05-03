@@ -1,0 +1,148 @@
+@media (min-width: 991px) {
+  .container {
+    padding: 1.5rem 2rem;
+
+    header {
+      .nav {
+        height: 60px;
+        flex-direction: row;
+        align-items: center;
+
+        .logo {
+          @include typography(1.5rem, 800);
+        }
+        &__links {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          height: 100%;
+          background-color: transparent;
+
+          li {
+            margin: 0 1.5rem;
+            a {
+              @include typography(1.125rem, 500);
+              color: $grey_800;
+            }
+          }
+        }
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+
+  //main section
+  main {
+    max-width: 991px;
+    margin: 0 auto;
+    .banner {
+      &_subtitle {
+        @include typography(1.125rem, 500);
+      }
+
+      &_title {
+        @include typography(3rem, 500);
+      }
+
+      figure {
+        img {
+          @include img(21.875rem, 100%, cover);
+        }
+      }
+    }
+
+    .cards {
+      &__container {
+        @include grid(repeat(3, 1fr), auto);
+      }
+    }
+
+    .project {
+      &__container {
+        @include grid(repeat(2, 1fr), auto);
+        gap: 1.5rem;
+      }
+
+      &_cards {
+        figure {
+          img {
+            @include img(615px, 100%, cover);
+          }
+        }
+
+        &:nth-child(odd) {
+          margin-top: 5rem;
+        }
+      }
+    }
+
+    .team {
+      @include grid(0.5fr 1fr, auto);
+      align-items: center;
+      gap: 2rem;
+
+      &__images {
+        &--container {
+          gap: 1rem;
+
+          .image {
+            &.img-1 {
+              img {
+                @include img(320px, 100%, cover);
+              }
+            }
+            img {
+              @include img(260px, 100%, cover);
+              margin-bottom: 8px;
+
+              &:nth-child(2) {
+                @include img(300px, 100%, cover);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .review {
+      blockquote {
+        @include typography(2.25rem, 500);
+        padding-right: 3rem;
+      }
+      &__user {
+        justify-content: flex-start;
+
+        img {
+          width: 10%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__container {
+      max-width: 991px;
+      margin: 0 auto;
+      padding: 1rem 0;
+      @include grid(repeat(3, 1fr), auto);
+    }
+
+    &__top {
+      ul {
+        li {
+          line-height: 3rem;
+        }
+      }
+    }
+
+    &_bottom {
+      .email {
+        h5 {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
