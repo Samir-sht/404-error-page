@@ -39,42 +39,6 @@ main {
     }
   }
 
-  .email {
-    padding: 0 1.5rem;
-    h5 {
-      @include typography(0.75rem, 500);
-      color: $grey_600;
-      margin-bottom: 0.625rem;
-    }
-
-    &__field {
-      position: relative;
-      input[type="email"] {
-        height: 2.8125rem;
-        width: 100%;
-        border-radius: 0.75rem;
-        background-color: $grey_100;
-        outline: none;
-        padding-left: 1rem;
-        border: none;
-        @include position(relative, 0, 0);
-      }
-
-      button {
-        height: 2.8125rem;
-        width: 4.375rem;
-        border-radius: 0.75rem;
-        background-color: $blue;
-        color: $white;
-        @include typography(0.875rem, 500);
-        border: none;
-        outline: none;
-        position: absolute;
-        right: 0rem;
-      }
-    }
-  }
-
   .cards {
     padding: 0 1.5rem;
     &__title {
@@ -145,6 +109,63 @@ main {
       span {
         @include typography(1rem, 400);
         color: $grey_700;
+      }
+    }
+
+    &__images {
+      &--container {
+        @include grid(repeat(2, 1fr), auto);
+        gap: 0.5rem;
+
+        .image {
+          &.img-1 {
+            display: inline-block;
+            margin: auto 0;
+
+            img {
+              @include img(180px, 100%, cover);
+              border-radius: 1.5rem;
+            }
+          }
+          img {
+            @include img(145px, 100%, cover);
+            border-radius: 1.5rem;
+
+            &:nth-child(2) {
+              @include img(170px, 100%, cover);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .review {
+    blockquote {
+      @include typography(1.5rem, 500);
+      margin-bottom: 2rem;
+    }
+
+    &__user {
+      @include flex-box(space-between, center);
+      gap: 1rem;
+      img {
+        @include img(80px, 30%, cover);
+        border-radius: 0.75rem;
+      }
+    }
+
+    &__body {
+      width: 70%;
+
+      h5 {
+        @include typography(1.5rem, 500);
+        color: $grey_800;
+      }
+
+      p {
+        @include typography(1.125rem, 500);
+        color: $grey_600;
       }
     }
   }

@@ -26,6 +26,10 @@ a {
   margin-bottom: 3rem;
 }
 
+.mb-32 {
+  margin-bottom: 2rem;
+}
+
 .mb-18 {
   margin-bottom: 18px;
 }
@@ -90,6 +94,220 @@ a {
 }
 .card__body button.frontend-btn a {
   color: #fff;
+}
+
+.email h5 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #828282;
+  margin-bottom: 0.625rem;
+}
+.email__field {
+  position: relative;
+}
+.email__field input[type=email] {
+  height: 2.8125rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: #f2f2f2;
+  outline: none;
+  padding-left: 1rem;
+  border: none;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.email__field button {
+  height: 2.8125rem;
+  width: 4.375rem;
+  border-radius: 0.75rem;
+  background-color: #2d9cdb;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0rem;
+}
+
+main {
+  padding: 2rem 0rem;
+}
+main .banner__heading {
+  padding: 0 1.5rem;
+}
+main .banner_subtitle {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2d9cdb;
+}
+main .banner_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 1rem;
+  color: #333333;
+}
+main .banner figure img {
+  height: 145px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.125rem;
+}
+main .bottom-part {
+  padding: 0 1.5rem;
+}
+main .bottom-part h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 70%;
+  color: #333333;
+  margin-bottom: 1.125rem;
+}
+main .bottom-part p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+main .cards {
+  padding: 0 1.5rem;
+}
+main .cards__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 4rem;
+  color: #333333;
+}
+main .project__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  color: #333333;
+  padding: 0 1.5rem;
+}
+main .project_cards figure img {
+  height: 20.9375rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.125rem;
+}
+main .project__body span {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+main .project__body p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+main .project .link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2d9cdb;
+}
+main .project .link a .forward-arrow {
+  font-size: 1.5rem;
+}
+main .team__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  color: #eb5757;
+}
+main .team__description {
+  padding-right: 2.5rem;
+}
+main .team__description p {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #333333;
+}
+main .team__description span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+main .team__images--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 0.5rem;
+}
+main .team__images--container .image.img-1 {
+  display: inline-block;
+  margin: auto 0;
+}
+main .team__images--container .image.img-1 img {
+  height: 180px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem;
+}
+main .team__images--container .image img {
+  height: 145px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem;
+}
+main .team__images--container .image img:nth-child(2) {
+  height: 170px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .review blockquote {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+main .review__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+main .review__user img {
+  height: 80px;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.75rem;
+}
+main .review__body {
+  width: 70%;
+}
+main .review__body h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333333;
+}
+main .review__body p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #828282;
 }
 
 .container {
@@ -162,117 +380,33 @@ a {
   line-height: 1.875rem;
 }
 
-main {
-  padding: 2rem 0rem;
+.footer {
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 0;
+  background-color: #100e1d;
 }
-main .banner__heading {
-  padding: 0 1.5rem;
+.footer_link {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-main .banner_subtitle {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #2d9cdb;
+.footer_link li {
+  line-height: 2rem;
 }
-main .banner_title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: normal;
-  padding-right: 1rem;
-  color: #333333;
-}
-main .banner figure img {
-  height: 145px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1.125rem;
-}
-main .bottom-part {
-  padding: 0 1.5rem;
-}
-main .bottom-part h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  max-width: 70%;
-  color: #333333;
-  margin-bottom: 1.125rem;
-}
-main .bottom-part p {
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #4f4f4f;
-}
-main .email {
-  padding: 0 1.5rem;
-}
-main .email h5 {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #828282;
-  margin-bottom: 0.625rem;
-}
-main .email__field {
-  position: relative;
-}
-main .email__field input[type=email] {
-  height: 2.8125rem;
-  width: 100%;
-  border-radius: 0.75rem;
-  background-color: #f2f2f2;
-  outline: none;
-  padding-left: 1rem;
-  border: none;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-main .email__field button {
-  height: 2.8125rem;
-  width: 4.375rem;
-  border-radius: 0.75rem;
-  background-color: #2d9cdb;
+.footer_link li a {
   color: #fff;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  position: absolute;
-  right: 0rem;
-}
-main .cards {
-  padding: 0 1.5rem;
-}
-main .cards__title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: normal;
-  padding-right: 4rem;
-  color: #333333;
-}
-main .project__title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: normal;
-  width: 100%;
-  color: #333333;
-  padding: 0 1.5rem;
-}
-main .project_cards figure img {
-  height: 20.9375rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1.125rem;
-}
-main .project__body span {
-  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-size: 1.125rem;
   font-weight: 400;
 }
-main .project__body p {
-  font-size: 1.125rem;
-  font-weight: 500;
+.footer__middle .logo--text {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #f2f2f2;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
-main .project .link a {
+.footer__middle .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,31 +416,18 @@ main .project .link a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
-  font-size: 1.125rem;
+  gap: 1rem;
+}
+.footer__middle .social-media figure {
+  height: 24px;
+  width: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .attribution {
+  font-size: 0.875rem;
   font-weight: 500;
-  color: #2d9cdb;
-}
-main .project .link a .forward-arrow {
-  font-size: 1.5rem;
-}
-main .team__title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: normal;
-  width: 100%;
-  color: #eb5757;
-}
-main .team__description {
-  padding-right: 2.5rem;
-}
-main .team__description p {
-  font-size: 2.25rem;
-  font-weight: 500;
-  color: #333333;
-}
-main .team__description span {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #4f4f4f;
+  text-align: center;
+  color: #f2f2f2;
+  text-transform: capitalize;
 }

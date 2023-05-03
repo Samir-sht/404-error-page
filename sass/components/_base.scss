@@ -23,6 +23,10 @@ a {
   margin-bottom: 3rem;
 }
 
+.mb-32 {
+  margin-bottom: 2rem;
+}
+
 .mb-18 {
   margin-bottom: 18px;
 }
@@ -83,6 +87,42 @@ a {
           color: $white;
         }
       }
+    }
+  }
+}
+
+.email {
+  // padding: 0 1.5rem;
+  h5 {
+    @include typography(0.75rem, 500);
+    color: $grey_600;
+    margin-bottom: 0.625rem;
+  }
+
+  &__field {
+    position: relative;
+    input[type="email"] {
+      height: 2.8125rem;
+      width: 100%;
+      border-radius: 0.75rem;
+      background-color: $grey_100;
+      outline: none;
+      padding-left: 1rem;
+      border: none;
+      @include position(relative, 0, 0);
+    }
+
+    button {
+      height: 2.8125rem;
+      width: 4.375rem;
+      border-radius: 0.75rem;
+      background-color: $blue;
+      color: $white;
+      @include typography(0.875rem, 500);
+      border: none;
+      outline: none;
+      position: absolute;
+      right: 0rem;
     }
   }
 }
