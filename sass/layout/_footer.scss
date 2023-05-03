@@ -28,7 +28,7 @@
       @include flex-box(flex-start, center);
       gap: 1rem;
       figure {
-        @include img(24px, 24px, cover);
+        @include height_width(24px, 24px);
       }
     }
   }

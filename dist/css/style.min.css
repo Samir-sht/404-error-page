@@ -96,6 +96,12 @@ a {
   color: #fff;
 }
 
+.email {
+  padding: 0 1.5rem;
+}
+.email.emails {
+  padding: 0;
+}
 .email h5 {
   font-size: 0.75rem;
   font-weight: 500;
@@ -373,7 +379,7 @@ main .review__body p {
   font-weight: 400;
 }
 .container header .nav .show {
-  height: 30vh;
+  height: 35vh;
   padding: 8px;
 }
 .container header .nav .show li {
@@ -421,8 +427,6 @@ main .review__body p {
 .footer__middle .social-media figure {
   height: 24px;
   width: 24px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .footer .attribution {
   font-size: 0.875rem;

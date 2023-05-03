@@ -93,6 +93,10 @@ a {
 
 .email {
   padding: 0 1.5rem;
+
+  &.emails {
+    padding: 0;
+  }
   h5 {
     @include typography(0.75rem, 500);
     color: $grey_600;
