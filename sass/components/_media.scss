@@ -44,6 +44,7 @@
 
       &_title {
         @include typography(3rem, 500);
+        max-width: 60%;
       }
 
       figure {
@@ -53,13 +54,29 @@
       }
     }
 
+    .bottom-part {
+      width: 35%;
+    }
+
+    .email {
+      width: 35%;
+    }
+
     .cards {
+      &__title {
+        width: 45%;
+        font-size: 2.25rem;
+      }
       &__container {
         @include grid(repeat(3, 1fr), auto);
       }
     }
 
     .project {
+      &__title {
+        width: 45%;
+        font-size: 2.25rem;
+      }
       &__container {
         @include grid(repeat(2, 1fr), auto);
         gap: 1.5rem;

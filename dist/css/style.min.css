@@ -484,6 +484,7 @@ main .review__body p {
   main .banner_title {
     font-size: 3rem;
     font-weight: 500;
+    max-width: 60%;
   }
   main .banner figure img {
     height: 21.875rem;
@@ -491,10 +492,24 @@ main .review__body p {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  main .bottom-part {
+    width: 35%;
+  }
+  main .email {
+    width: 35%;
+  }
+  main .cards__title {
+    width: 45%;
+    font-size: 2.25rem;
+  }
   main .cards__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+  }
+  main .project__title {
+    width: 45%;
+    font-size: 2.25rem;
   }
   main .project__container {
     display: grid;
