@@ -137,45 +137,48 @@ a {
   right: 0rem;
 }
 
-main {
-  padding: 2rem 0rem;
+.banner__heading {
+  padding: 2rem 1.5rem 0 1.5rem;
 }
-main .banner__heading {
-  padding: 0 1.5rem;
-}
-main .banner_subtitle {
+.banner_subtitle {
   font-size: 0.75rem;
   font-weight: 500;
   color: #2d9cdb;
 }
-main .banner_title {
+.banner_title {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: normal;
   padding-right: 1rem;
   color: #333333;
 }
-main .banner figure img {
-  height: 145px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1.125rem;
-}
-main .bottom-part {
+
+.bottom-part {
   padding: 0 1.5rem;
 }
-main .bottom-part h2 {
+.bottom-part h2 {
   font-size: 1.5rem;
   font-weight: 500;
   max-width: 70%;
   color: #333333;
   margin-bottom: 1.125rem;
 }
-main .bottom-part p {
+.bottom-part p {
   font-size: 0.875rem;
   font-weight: 400;
   color: #4f4f4f;
+}
+
+.hero-image img {
+  height: 145px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.125rem;
+}
+
+main {
+  padding: 2rem 0rem;
 }
 main .cards {
   padding: 0 1.5rem;
@@ -378,7 +381,7 @@ main .review__body p {
   font-weight: 400;
 }
 .container header .nav .show {
-  height: 65vh;
+  height: 60vh;
 }
 
 .footer {
@@ -473,30 +476,56 @@ main .review__body p {
   .container header .menu {
     display: none;
   }
-  main {
+  .banner {
     max-width: 991px;
     margin: 0 auto;
   }
-  main .banner_subtitle {
+  .banner_heading {
+    margin-top: 3rem;
+  }
+  .banner_subtitle {
     font-size: 1.125rem;
     font-weight: 500;
+    padding: 0 2rem;
   }
-  main .banner_title {
+  .banner_title {
     font-size: 3rem;
     font-weight: 500;
-    max-width: 60%;
+    width: 65%;
+    padding: 0 2rem;
   }
-  main .banner figure img {
-    height: 21.875rem;
+  .bottom-part {
+    max-width: 65%;
+  }
+  .bottom-part h2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .bottom-part p {
+    max-width: 65%;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .email {
+    width: 35%;
+  }
+  .email h5 {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .emails {
+    width: 100%;
+  }
+  .hero-image img {
+    height: 355px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 1.125rem;
   }
-  main .bottom-part {
-    width: 35%;
-  }
-  main .email {
-    width: 35%;
+  main {
+    max-width: 991px;
+    margin: 0 auto;
   }
   main .cards__title {
     width: 45%;
@@ -516,6 +545,12 @@ main .review__body p {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1.5rem;
+    position: relative;
+  }
+  main .project .link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   main .project_cards figure img {
     height: 615px;

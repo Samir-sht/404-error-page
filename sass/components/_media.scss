@@ -33,34 +33,59 @@
     }
   }
 
+  //banner section
+  .banner {
+    max-width: 991px;
+    margin: 0 auto;
+
+    &_heading {
+      margin-top: 3rem;
+    }
+    &_subtitle {
+      @include typography(1.125rem, 500);
+      padding: 0 2rem;
+    }
+
+    &_title {
+      @include typography(3rem, 500);
+      width: 65%;
+      padding: 0 2rem;
+    }
+  }
+
+  .bottom-part {
+    max-width: 65%;
+    h2 {
+      @include typography(3rem, 500);
+    }
+    p {
+      max-width: 65%;
+      @include typography(1.125rem, 400);
+    }
+  }
+
+  .email {
+    width: 35%;
+
+    h5 {
+      @include typography(0.875rem, 500);
+    }
+  }
+
+  .emails {
+    width: 100%;
+  }
+
+  .hero-image {
+    img {
+      @include img(355px, 100%, cover);
+      border-radius: 1.125rem;
+    }
+  }
   //main section
   main {
     max-width: 991px;
     margin: 0 auto;
-    .banner {
-      &_subtitle {
-        @include typography(1.125rem, 500);
-      }
-
-      &_title {
-        @include typography(3rem, 500);
-        max-width: 60%;
-      }
-
-      figure {
-        img {
-          @include img(21.875rem, 100%, cover);
-        }
-      }
-    }
-
-    .bottom-part {
-      width: 35%;
-    }
-
-    .email {
-      width: 35%;
-    }
 
     .cards {
       &__title {
@@ -80,6 +105,13 @@
       &__container {
         @include grid(repeat(2, 1fr), auto);
         gap: 1.5rem;
+        position: relative;
+      }
+
+      .link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
 
       &_cards {

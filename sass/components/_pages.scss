@@ -1,43 +1,43 @@
+.banner {
+  &__heading {
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
+  &_subtitle {
+    @include typography(0.75rem, 500);
+    color: $blue;
+  }
+  &_title {
+    @include typography(1.5rem, 500);
+    line-height: normal;
+    padding-right: 1rem;
+    color: $grey_800;
+  }
+}
+
+.bottom-part {
+  padding: 0 1.5rem;
+  h2 {
+    @include typography(1.5rem, 500);
+    max-width: 70%;
+    color: $grey_800;
+    margin-bottom: 1.125rem;
+  }
+  p {
+    @include typography(0.875rem, 400);
+    color: $grey_700;
+  }
+}
+
+.hero-image {
+  img {
+    @include img(145px, 100%, cover);
+    border-radius: 1.125rem;
+  }
+}
+
 main {
   padding: 2rem 0rem;
   // padding-left: 1.5rem;
-
-  .banner {
-    &__heading {
-      padding: 0 1.5rem;
-    }
-    &_subtitle {
-      @include typography(0.75rem, 500);
-      color: $blue;
-    }
-    &_title {
-      @include typography(1.5rem, 500);
-      line-height: normal;
-      padding-right: 1rem;
-      color: $grey_800;
-    }
-
-    figure {
-      img {
-        @include img(145px, 100%, cover);
-        border-radius: 1.125rem;
-      }
-    }
-  }
-
-  .bottom-part {
-    padding: 0 1.5rem;
-    h2 {
-      @include typography(1.5rem, 500);
-      max-width: 70%;
-      color: $grey_800;
-      margin-bottom: 1.125rem;
-    }
-    p {
-      @include typography(0.875rem, 400);
-      color: $grey_700;
-    }
-  }
 
   .cards {
     padding: 0 1.5rem;
