@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  max-width: 1440px;
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -363,7 +367,20 @@ main .review__body p {
   top: 0;
   left: 0;
   text-align: center;
-  height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 0;
   z-index: 20;
   background-color: #2d9cdb;
   -webkit-transition: height 0.5s ease-in-out;
@@ -381,7 +398,7 @@ main .review__body p {
   font-weight: 400;
 }
 .container header .nav .show {
-  height: 60vh;
+  height: 35vh;
 }
 
 .footer {
