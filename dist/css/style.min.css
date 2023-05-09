@@ -398,11 +398,7 @@ main .review__body p {
   font-weight: 400;
 }
 .container header .nav .show {
-<<<<<<< HEAD
   height: 35vh;
-=======
-  height: 30vh;
->>>>>>> 06e61cb0d017104c8faf957ecad5008cc5a1d39c
 }
 
 .footer {
@@ -477,12 +473,16 @@ main .review__body p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     height: 100%;
     background-color: transparent;
   }

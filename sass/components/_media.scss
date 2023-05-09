@@ -12,9 +12,8 @@
           @include typography(1.5rem, 800);
         }
         &__links {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
+          @include flex-box(flex-end, center);
+          flex-direction: row;
           height: 100%;
           background-color: transparent;
 
