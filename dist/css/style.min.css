@@ -553,6 +553,9 @@ footer {
     grid-column: auto;
     grid-row: auto;
   }
+  .card__body--first {
+    margin-bottom: 5px !important;
+  }
 }
 @media (max-width: 600px) {
   main {
@@ -579,6 +582,9 @@ footer {
   .portfolio__info .phone {
     font-size: 0.875rem;
   }
+  .project__body .language span {
+    font-size: 0.75rem !important;
+  }
   .experience .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -592,13 +598,17 @@ footer {
   .experience .card__body {
     width: 100%;
   }
+  .buttons button {
+    height: 42px !important;
+    width: 100px !important;
+  }
+  .buttons button a {
+    font-size: 1rem !important;
+  }
 }
 @media (max-width: 380px) {
   h3 {
     font-size: 1rem !important;
-  }
-  h4 {
-    font-size: 0.875rem !important;
   }
   p {
     font-size: 0.75rem !important;

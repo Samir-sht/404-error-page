@@ -62,6 +62,10 @@
     grid-column: auto;
     grid-row: auto;
   }
+
+  .card__body--first {
+    margin-bottom: 5px !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -96,6 +100,16 @@
     }
   }
 
+  .project {
+    &__body {
+      .language {
+        span {
+          font-size: 0.75rem !important;
+        }
+      }
+    }
+  }
+
   .experience {
     .card {
       flex-direction: column;
@@ -110,15 +124,24 @@
       }
     }
   }
+
+  .buttons {
+    button {
+      height: 42px !important;
+      width: 100px !important;
+
+      a {
+        font-size: 1rem !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 380px) {
   h3 {
     font-size: 1rem !important;
   }
-  h4 {
-    font-size: 0.875rem !important;
-  }
+
   p {
     font-size: 0.75rem !important;
   }
