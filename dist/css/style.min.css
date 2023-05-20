@@ -347,7 +347,7 @@ main {
   font-size: 1rem;
   font-weight: 500;
   color: #828282;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .project__body .buttons button {
   -webkit-transition: all 0.5s ease;
@@ -609,6 +609,9 @@ footer {
 @media (max-width: 380px) {
   h3 {
     font-size: 1rem !important;
+  }
+  h4 {
+    font-size: 0.875rem !important;
   }
   p {
     font-size: 0.75rem !important;
